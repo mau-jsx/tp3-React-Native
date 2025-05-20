@@ -4,7 +4,6 @@
     "slug": "tp3-React-Native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
     "scheme": "tp3reactnative",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
