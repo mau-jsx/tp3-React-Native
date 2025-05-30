@@ -4,6 +4,7 @@ import React from "react";
 import { Platform } from "react-native";
 import Calculadora from "./Calculadora";
 import Productos from "./ProductList";
+import Tareas from "./Tareas";
 import UserCreate from "./UserCreate";
 
 const Tab = createBottomTabNavigator();
@@ -37,6 +38,14 @@ export default function Dashbord() {
                 color={color}
               />
             );
+          } else if (route.name === "Tareas") {
+            return (
+              <MaterialIcons
+                name={focused ? "assignment" : "assignment"}
+                size={24}
+                color={color}
+              />
+            );
           }
         },
         tabBarActiveTintColor: "#8e44ad",
@@ -61,6 +70,7 @@ export default function Dashbord() {
       <Tab.Screen name="Inicio" component={UserCreate} />
       <Tab.Screen name="Calculadora" component={Calculadora} />
       <Tab.Screen name="Productos" component={Productos} />
+      <Tab.Screen name="Tareas" component={Tareas} />
     </Tab.Navigator>
   );
 }
